@@ -30,4 +30,4 @@ RUN echo "git-sync:x:65533:65533::/tmp:/sbin/nologin" >> /etc/passwd
 
 WORKDIR /tmp
 USER git-sync:nogroup
-ENTRYPOINT ["/{ARG_BIN}"]
+ENTRYPOINT ["sh", "/{ARG_BIN}"]
